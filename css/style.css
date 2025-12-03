@@ -2,15 +2,8 @@
    КАРАМЕЛЬКА AI — Стили
    ======================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
     font-family: 'Inter', sans-serif;
@@ -20,7 +13,7 @@ body {
     min-height: 100vh;
 }
 
-/* ========== CANVAS ЧАСТИЦЫ ========== */
+/* ========== CANVAS ========== */
 #particles-canvas {
     position: fixed;
     top: 0;
@@ -31,7 +24,7 @@ body {
     pointer-events: none;
 }
 
-/* ========== ГРАДИЕНТНЫЕ ПЯТНА ========== */
+/* ========== ГРАДИЕНТНЫЕ ПЯТНА (с blur) ========== */
 .bg-blobs {
     position: fixed;
     top: 0;
@@ -41,41 +34,20 @@ body {
     z-index: 0;
     pointer-events: none;
     overflow: hidden;
+    filter: blur(60px); /* Дополнительный blur для мягкости */
 }
 
 .blob {
     position: absolute;
     border-radius: 50%;
-    filter: blur(120px);
-    opacity: 0.25;
+    filter: blur(80px);
+    opacity: 0.2;
     animation: blobFloat 25s ease-in-out infinite;
 }
 
-.blob-1 {
-    width: 600px;
-    height: 600px;
-    background: #7c3aed;
-    top: -200px;
-    left: -100px;
-}
-
-.blob-2 {
-    width: 500px;
-    height: 500px;
-    background: #f59e0b;
-    top: 50%;
-    right: -150px;
-    animation-delay: -8s;
-}
-
-.blob-3 {
-    width: 400px;
-    height: 400px;
-    background: #ec4899;
-    bottom: -100px;
-    left: 30%;
-    animation-delay: -16s;
-}
+.blob-1 { width: 600px; height: 600px; background: #7c3aed; top: -200px; left: -100px; }
+.blob-2 { width: 500px; height: 500px; background: #f59e0b; top: 50%; right: -150px; animation-delay: -8s; }
+.blob-3 { width: 400px; height: 400px; background: #ec4899; bottom: -100px; left: 30%; animation-delay: -16s; }
 
 @keyframes blobFloat {
     0%, 100% { transform: translate(0, 0) scale(1); }
@@ -84,12 +56,9 @@ body {
 }
 
 /* ========== КОНТЕНТ ========== */
-.content {
-    position: relative;
-    z-index: 1;
-}
+.content { position: relative; z-index: 1; }
 
-/* ========== GLASS ЭФФЕКТ ========== */
+/* ========== GLASS ========== */
 .glass {
     background: rgba(15, 15, 25, 0.6);
     backdrop-filter: blur(16px);
@@ -97,7 +66,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* ========== ГРАДИЕНТНЫЙ ТЕКСТ ========== */
+/* ========== ГРАДИЕНТЫ ========== */
 .gradient-text {
     background: linear-gradient(135deg, #fbbf24, #f59e0b, #d97706);
     -webkit-background-clip: text;
@@ -122,7 +91,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 24px -8px rgba(251, 191, 36, 0.4);
@@ -138,21 +106,15 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-.btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
+.btn-secondary:hover { background: rgba(255, 255, 255, 0.1); }
 
 /* ========== НАВИГАЦИЯ ========== */
 .nav-sticky {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0; left: 0; right: 0;
     z-index: 100;
     transition: all 0.3s ease;
 }
-
 .nav-sticky.scrolled {
     background: rgba(8, 8, 12, 0.95);
     backdrop-filter: blur(20px);
@@ -161,25 +123,15 @@ body {
 }
 
 /* ========== КАРТОЧКИ ========== */
-.feature-card {
-    transition: all 0.3s ease;
-}
-
+.feature-card { transition: all 0.3s ease; }
 .feature-card:hover {
     transform: translateY(-4px);
     background: rgba(40, 40, 60, 0.5);
 }
 
 /* ========== БЕЙДЖИ ========== */
-.badge-free {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
-    color: white;
-}
-
-.badge-premium {
-    background: linear-gradient(135deg, #a855f7, #7c3aed);
-    color: white;
-}
+.badge-free { background: linear-gradient(135deg, #22c55e, #16a34a); color: white; }
+.badge-premium { background: linear-gradient(135deg, #a855f7, #7c3aed); color: white; }
 
 /* ========== ПОПУЛЯРНАЯ КАРТОЧКА ========== */
 .card-popular {
@@ -187,57 +139,44 @@ body {
     box-shadow: 0 0 50px -10px rgba(251, 191, 36, 0.3);
 }
 
-/* ========== ДЕТАЛИ (FAQ) ========== */
-details summary {
-    list-style: none;
-}
-
-details summary::-webkit-details-marker {
-    display: none;
-}
-
-details[open] summary .fa-chevron-down {
-    transform: rotate(180deg);
-}
-
-details summary .fa-chevron-down {
-    transition: transform 0.3s ease;
-}
+/* ========== FAQ ========== */
+details summary { list-style: none; cursor: pointer; }
+details summary::-webkit-details-marker { display: none; }
+details[open] summary .fa-chevron-down { transform: rotate(180deg); }
+details summary .fa-chevron-down { transition: transform 0.3s ease; }
 
 /* ========== ССЫЛКИ ========== */
-a {
-    color: inherit;
-    text-decoration: none;
+a { color: inherit; text-decoration: none; }
+
+/* ========== АНИМАЦИИ ПОЯВЛЕНИЯ ПРИ СКРОЛЛЕ ========== */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* ========== АНИМАЦИЯ ПУЛЬСА ========== */
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Задержки для последовательного появления */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* ========== ПУЛЬСАЦИЯ ========== */
 @keyframes pulse {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.5; }
 }
+.animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
 
-.animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-/* ========== АДАПТИВНОСТЬ ========== */
+/* ========== АДАПТИВ ========== */
 @media (max-width: 768px) {
-    .blob {
-        opacity: 0.15;
-    }
-    
-    .blob-1 {
-        width: 300px;
-        height: 300px;
-    }
-    
-    .blob-2 {
-        width: 250px;
-        height: 250px;
-    }
-    
-    .blob-3 {
-        width: 200px;
-        height: 200px;
-    }
+    .blob { opacity: 0.1; }
+    .blob-1 { width: 300px; height: 300px; }
+    .blob-2 { width: 250px; height: 250px; }
+    .blob-3 { width: 200px; height: 200px; }
 }
