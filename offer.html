@@ -31,7 +31,7 @@
     <!-- НАВИГАЦИЯ -->
     <nav id="navbar" class="nav-sticky py-4">
         <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2">
+            <a href="index.html" class="flex items-center gap-2">
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
                     <i class="fa-solid fa-bowl-food text-slate-900 text-lg"></i>
                 </div>
@@ -57,7 +57,7 @@
                         Публичная оферта на приобретение премиум-подписки «Карамелька AI»
                     </h1>
                     <p class="text-slate-400 text-sm">
-                        Дата последнего обновления: 03.12.2025
+                        Дата последнего обновления: 04.12.2025
                     </p>
                 </div>
 
@@ -82,8 +82,9 @@
                             <li>расширенный планировщик питания;</li>
                             <li>приоритетную обработку запросов;</li>
                             <li>дополнительные функции ИИ;</li>
-                            <li>увеличенный лимит энергии;</li>
-                            <li>сниженный расход энергии;</li>
+                            <li>увеличенный лимит энергии (300 ⚡️ вместо 100 ⚡️);</li>
+                            <li>сниженный расход энергии (-50%);</li>
+                            <li>ускоренную обработку запросов (х2 быстрее);</li>
                             <li>повышенный приоритет в розыгрышах.</li>
                         </ul>
                     </div>
@@ -105,6 +106,10 @@
                         <p>
                             Оплата производится через платёжный агрегатор ЮKassa в соответствии
                             с его условиями обслуживания.
+                        </p>
+                        <p>
+                            <strong>Подписка НЕ продлевается автоматически.</strong> За сутки до окончания 
+                            срока действия Заказчик получает уведомление в боте.
                         </p>
                         <p>
                             Факт оплаты является безусловным акцептом (принятием) настоящей оферты
@@ -129,19 +134,26 @@
 
                 <!-- Возвраты -->
                 <div class="mb-8">
-                    <h2 class="text-xl font-bold text-white mb-4">5. Возвраты</h2>
+                    <h2 class="text-xl font-bold text-white mb-4">5. Возврат средств</h2>
                     <div class="text-slate-300 text-sm leading-relaxed space-y-3">
                         <p>
-                            Возврат денежных средств осуществляется по обращению Заказчика
-                            в случае технических ошибок, повлекших невозможность предоставления услуги.
+                            Возврат денежных средств возможен в течение <strong>14 дней</strong> с момента оплаты 
+                            при наличии следующих обстоятельств:
                         </p>
-                        <p>
-                            Оплата за уже оказанные услуги (активированный доступ к премиум-функциям)
-                            возврату не подлежит.
-                        </p>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>отсутствие доступа к оплаченным функциям по техническим причинам;</li>
+                            <li>технические сбои, длящиеся более 3 дней подряд.</li>
+                        </ul>
+                        <p><strong>Возврат НЕ производится в следующих случаях:</strong></p>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>при смене решения Заказчика о покупке;</li>
+                            <li>при нарушении Заказчиком правил использования Сервиса;</li>
+                            <li>после окончания срока действия подписки;</li>
+                            <li>при использовании премиум-функций (услуга уже оказана).</li>
+                        </ul>
                         <p>
                             Для запроса возврата Заказчик должен обратиться в поддержку Сервиса
-                            через соответствующую команду в боте или по контактам, указанным ниже.
+                            через команду в боте или по email, указанному в разделе 8.
                         </p>
                     </div>
                 </div>
@@ -159,12 +171,34 @@
                             Заказчик несёт ответственность за корректность указанных при оплате
                             платёжных данных.
                         </p>
+                        <p>
+                            Исполнитель не несёт ответственности за последствия применения рекомендаций,
+                            полученных через Сервис, включая возможные аллергические реакции или вред здоровью.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Форс-мажор -->
+                <div class="mb-8">
+                    <h2 class="text-xl font-bold text-white mb-4">7. Форс-мажор</h2>
+                    <div class="text-slate-300 text-sm leading-relaxed space-y-3">
+                        <p>
+                            Стороны освобождаются от ответственности за частичное или полное неисполнение
+                            обязательств по настоящей оферте, если это явилось следствием обстоятельств
+                            непреодолимой силы (форс-мажор), включая:
+                        </p>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>блокировку или ограничение работы Telegram в РФ;</li>
+                            <li>недоступность сервисов OpenAI/OpenRouter;</li>
+                            <li>действия государственных органов;</li>
+                            <li>стихийные бедствия и чрезвычайные ситуации.</li>
+                        </ul>
                     </div>
                 </div>
 
                 <!-- Срок действия оферты -->
                 <div class="mb-8">
-                    <h2 class="text-xl font-bold text-white mb-4">7. Срок действия оферты</h2>
+                    <h2 class="text-xl font-bold text-white mb-4">8. Срок действия оферты</h2>
                     <div class="text-slate-300 text-sm leading-relaxed space-y-3">
                         <p>
                             Настоящая публичная оферта действует бессрочно с момента размещения
@@ -175,11 +209,11 @@
 
                 <!-- Реквизиты исполнителя -->
                 <div class="mb-0">
-                    <h2 class="text-xl font-bold text-white mb-4">8. Реквизиты исполнителя</h2>
+                    <h2 class="text-xl font-bold text-white mb-4">9. Реквизиты исполнителя</h2>
                     <div class="text-slate-300 text-sm leading-relaxed space-y-3">
-                        <p><strong>Самозанятый:</strong> Гейль А.Э.</p>
-                        <p><strong>ИНН:</strong> 000000000000</p>
-                        <p><strong>Email:</strong> <a href="mailto:support@karamelka.ai" class="text-amber-400 hover:underline">support@karamelka.ai</a></p>
+                        <p><strong>Самозанятый:</strong> Гейль А. Э.</p>
+                        <p><strong>ИНН:</strong> 225201008014</p>
+                        <p><strong>Email:</strong> <a href="mailto:support@karamelkafood.ru" class="text-amber-400 hover:underline">support@karamelkafood.ru</a></p>
                         <p><strong>Telegram:</strong> <a href="https://t.me/karamelkafood" target="_blank" class="text-amber-400 hover:underline">@karamelkafood</a></p>
                     </div>
                 </div>
@@ -187,7 +221,6 @@
             </div>
         </div>
     </section>
-
 
 </div>
 
