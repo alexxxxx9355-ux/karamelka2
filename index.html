@@ -186,60 +186,123 @@
             <!-- Обычный рецепт -->
             <div class="glass rounded-2xl p-6 relative overflow-hidden fade-up">
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-amber-600"></div>
+                
+                <!-- Заголовок -->
                 <div class="flex items-center gap-2 mb-4 pt-2">
                     <span class="badge-free text-white text-xs font-bold px-2 py-0.5 rounded">БЕСПЛАТНО</span>
                     <span class="text-slate-500 text-xs">Обычный рецепт</span>
                 </div>
-                <h4 class="text-lg font-bold text-white mb-2">🍲 Борщ с говядиной</h4>
-                <p class="text-slate-500 text-xs mb-4">Наваристый суп с мясом, овощами и свеклой</p>
                 
-                <!-- Мета-информация -->
-                <div class="flex flex-wrap gap-2 mb-4 text-xs">
-                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1">
+                <h4 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                    🍲 Борщ с говядиной
+                </h4>
+                <p class="text-slate-400 text-sm mb-4">Наваристый суп с мясом, овощами и свеклой</p>
+                
+                <!-- Мета -->
+                <div class="flex flex-wrap gap-2 mb-5 text-xs">
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1.5">
                         <i class="fa-solid fa-clock text-slate-400"></i> 150 мин
                     </span>
-                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1">
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1.5">
                         <i class="fa-solid fa-utensils text-slate-400"></i> 6 порций
                     </span>
-                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">⭐️ ★★★☆☆</span>
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">⭐ ★★★☆☆</span>
+                </div>
+                
+                <!-- Ингредиенты -->
+                <div class="mb-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <i class="fa-solid fa-basket-shopping text-amber-400"></i>
+                        <h5 class="font-semibold text-white text-sm">Ингредиенты:</h5>
+                    </div>
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-slate-300">
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Говядина — 500 г
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Капуста — 400 г
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Картофель — 300 г
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Свекла — 250 г
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Морковь — 150 г
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Лук — 150 г
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Краткие шаги -->
+                <div class="mb-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <i class="fa-solid fa-list-ol text-amber-400"></i>
+                        <h5 class="font-semibold text-white text-sm">Краткие шаги:</h5>
+                    </div>
+                    <div class="space-y-2 text-xs text-slate-300">
+                        <div class="flex gap-2">
+                            <span class="text-amber-400 font-bold">1.</span>
+                            <span>Сварите бульон из говядины (1.5-2 часа)</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-amber-400 font-bold">2.</span>
+                            <span>Подготовьте и обжарьте овощи</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-amber-400 font-bold">3.</span>
+                            <span>Добавьте картофель, капусту, зажарку</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-amber-400 font-bold">4.</span>
+                            <span>Дайте настояться 15-20 минут</span>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- КБЖУ и цена -->
-                <div class="bg-gradient-to-r from-amber-500/20 to-transparent border-l-4 border-amber-400 rounded-r-xl p-4 mb-4">
-                    <div class="grid grid-cols-2 gap-y-3 gap-x-4 text-sm">
-                        <div>
-                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
-                                <i class="fa-solid fa-wallet"></i> Стоимость
+                <div class="bg-gradient-to-r from-amber-500/10 to-transparent border-l-4 border-amber-400 rounded-r-xl p-4 mb-4">
+                    <div class="grid grid-cols-2 gap-3 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-wallet text-amber-400"></i>
+                            <div>
+                                <div class="text-slate-400 text-xs">Стоимость</div>
+                                <div class="text-white font-bold">350₽</div>
                             </div>
-                            <div class="text-white font-bold">350₽</div>
                         </div>
-                        <div>
-                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
-                                <i class="fa-solid fa-plate-wheat"></i> За порцию
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-plate-wheat text-amber-400"></i>
+                            <div>
+                                <div class="text-slate-400 text-xs">За порцию</div>
+                                <div class="text-white font-bold">58₽</div>
                             </div>
-                            <div class="text-white font-bold">58₽</div>
                         </div>
-                        <div>
-                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
-                                <i class="fa-solid fa-fire"></i> Калории
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-fire text-amber-400"></i>
+                            <div>
+                                <div class="text-slate-400 text-xs">Калории</div>
+                                <div class="text-amber-400 font-bold">280 ккал</div>
                             </div>
-                            <div class="text-amber-400 font-bold">280 ккал</div>
                         </div>
-                        <div>
-                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
-                                <i class="fa-solid fa-chart-simple"></i> БЖУ
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-chart-simple text-amber-400"></i>
+                            <div>
+                                <div class="text-slate-400 text-xs">БЖУ</div>
+                                <div class="text-white font-bold">20/15/18г</div>
                             </div>
-                            <div class="text-white font-bold">20/15/18г</div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Совет -->
-                <div class="bg-slate-800/40 rounded-xl p-3 text-xs text-slate-300 leading-relaxed">
-                    <div class="flex items-start gap-2">
+                <div class="bg-slate-800/50 rounded-xl p-3 border border-slate-700/50">
+                    <div class="flex items-start gap-2 text-xs">
                         <i class="fa-solid fa-lightbulb text-amber-400 mt-0.5"></i>
-                        <div>
-                            <span class="text-amber-400 font-semibold">Совет:</span> Добавьте болгарский перец для насыщенного вкуса
+                        <div class="text-slate-300">
+                            <span class="text-amber-400 font-semibold">Совет от шефа:</span> Добавьте болгарский перец для насыщенного вкуса
                         </div>
                     </div>
                 </div>
@@ -248,60 +311,123 @@
             <!-- ПП рецепт -->
             <div class="glass rounded-2xl p-6 relative overflow-hidden fade-up delay-1">
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-violet-600"></div>
+                
+                <!-- Заголовок -->
                 <div class="flex items-center gap-2 mb-4 pt-2">
                     <span class="badge-premium text-white text-xs font-bold px-2 py-0.5 rounded">PREMIUM</span>
-                    <span class="text-slate-500 text-xs">ПП-рецепт</span>
+                    <span class="text-slate-500 text-xs">ПП-рецепт из планирования</span>
                 </div>
-                <h4 class="text-lg font-bold text-white mb-2">🍽️ Индейка с рисом и овощами</h4>
-                <p class="text-slate-500 text-xs mb-4">Сбалансированное блюдо для правильного питания</p>
                 
-                <!-- Мета-информация -->
-                <div class="flex flex-wrap gap-2 mb-4 text-xs">
-                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1">
+                <h4 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                    🍽️ Индейка с рисом и овощами
+                </h4>
+                <p class="text-slate-400 text-sm mb-4">Сбалансированное блюдо для правильного питания</p>
+                
+                <!-- Мета -->
+                <div class="flex flex-wrap gap-2 mb-5 text-xs">
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1.5">
                         <i class="fa-solid fa-clock text-slate-400"></i> 35 мин
                     </span>
-                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1">
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1.5">
                         <i class="fa-solid fa-utensils text-slate-400"></i> 1 порция
                     </span>
-                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">⭐️ ★★☆☆☆</span>
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">⭐ ★★☆☆☆</span>
+                </div>
+                
+                <!-- Ингредиенты -->
+                <div class="mb-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <i class="fa-solid fa-basket-shopping text-purple-400"></i>
+                        <h5 class="font-semibold text-white text-sm">Ингредиенты:</h5>
+                    </div>
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-slate-300">
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Филе индейки — 150 г
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Рис — 50 г
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Лук — 50 г
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Морковь — 50 г
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Болгарский перец — 50 г
+                        </div>
+                        <div class="flex items-start gap-1.5">
+                            <span class="text-slate-500 mt-0.5">▸</span> Масло — 5 мл
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Приготовление -->
+                <div class="mb-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <i class="fa-solid fa-list-ol text-purple-400"></i>
+                        <h5 class="font-semibold text-white text-sm">Приготовление:</h5>
+                    </div>
+                    <div class="space-y-2 text-xs text-slate-300">
+                        <div class="flex gap-2">
+                            <span class="text-purple-400 font-bold">1.</span>
+                            <span>Отварите рис до готовности</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-purple-400 font-bold">2.</span>
+                            <span>Обжарьте индейку до коричной корочки</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-purple-400 font-bold">3.</span>
+                            <span>Добавьте овощи, тушите 10 мин</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-purple-400 font-bold">4.</span>
+                            <span>Смешайте всё, посолите по вкусу</span>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- КБЖУ -->
-                <div class="bg-gradient-to-r from-green-500/20 to-transparent border-l-4 border-green-400 rounded-r-xl p-4 mb-4">
-                    <div class="grid grid-cols-2 gap-y-3 gap-x-4 text-sm">
-                        <div>
-                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
-                                <i class="fa-solid fa-fire"></i> Калории
+                <div class="bg-gradient-to-r from-green-500/10 to-transparent border-l-4 border-green-400 rounded-r-xl p-4 mb-4">
+                    <div class="grid grid-cols-2 gap-3 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-fire text-green-400"></i>
+                            <div>
+                                <div class="text-slate-400 text-xs">Калории</div>
+                                <div class="text-green-400 font-bold">450 ккал</div>
                             </div>
-                            <div class="text-green-400 font-bold">450 ккал</div>
                         </div>
-                        <div>
-                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
-                                <i class="fa-solid fa-drumstick-bite"></i> Белки
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-drumstick-bite text-green-400"></i>
+                            <div>
+                                <div class="text-slate-400 text-xs">Белки</div>
+                                <div class="text-white font-bold">35 г</div>
                             </div>
-                            <div class="text-white font-bold">35 г</div>
                         </div>
-                        <div>
-                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
-                                <i class="fa-solid fa-droplet"></i> Жиры
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-droplet text-green-400"></i>
+                            <div>
+                                <div class="text-slate-400 text-xs">Жиры</div>
+                                <div class="text-white font-bold">10 г</div>
                             </div>
-                            <div class="text-white font-bold">10 г</div>
                         </div>
-                        <div>
-                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
-                                <i class="fa-solid fa-wheat-awn"></i> Углеводы
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-wheat-awn text-green-400"></i>
+                            <div>
+                                <div class="text-slate-400 text-xs">Углеводы</div>
+                                <div class="text-white font-bold">55 г</div>
                             </div>
-                            <div class="text-white font-bold">55 г</div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Совет диетолога -->
-                <div class="bg-slate-800/40 rounded-xl p-3 text-xs text-slate-300 leading-relaxed">
-                    <div class="flex items-start gap-2">
+                <div class="bg-slate-800/50 rounded-xl p-3 border border-slate-700/50">
+                    <div class="flex items-start gap-2 text-xs">
                         <i class="fa-solid fa-user-doctor text-green-400 mt-0.5"></i>
-                        <div>
-                            <span class="text-green-400 font-semibold">Диетолог:</span> Добавьте томатную пасту для насыщенного вкуса
+                        <div class="text-slate-300">
+                            <span class="text-green-400 font-semibold">Совет диетолога:</span> Добавьте томатную пасту для насыщенного вкуса
                         </div>
                     </div>
                 </div>
@@ -325,6 +451,7 @@
         </div>
     </div>
 </section>
+
 
 
     <!-- ===== ГЕЙМИФИКАЦИЯ ===== -->
@@ -620,17 +747,37 @@
             
             <details class="glass rounded-xl group fade-up delay-4">
                 <summary class="p-5 flex items-center justify-between text-white font-medium cursor-pointer">
-                    Можно ли вернуть деньги?
+                    Зачем приглашать друзей в Помощника?
                     <i class="fa-solid fa-chevron-down text-slate-400"></i>
                 </summary>
                 <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">
-                    Да, в течение <span class="text-white font-medium">14 дней</span> после покупки можно запросить возврат. 
-                    Обратитесь в поддержку бота через команду /support.
+                    За каждого приглашённого друга вы получаете бонусы:
+                    <ul class="mt-3 space-y-2 text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-gift text-green-400 mt-1"></i>
+                            <span><span class="text-white font-medium">+30 XP</span> к уровню за каждого друга</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-calendar-check text-purple-400 mt-1"></i>
+                            <span><span class="text-white font-medium">Доступ к Планированию:</span> 10 друзей = 1 месяц, 20 = 3 месяца, 30 = навсегда</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-trophy text-amber-400 mt-1"></i>
+                            <span><span class="text-white font-medium">Больше шансов в розыгрышах</span> — чем выше уровень, тем больше «вес» при выборе победителя</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-star text-blue-400 mt-1"></i>
+                            <span><span class="text-white font-medium">Бонусная энергия</span> за активных рефералов</span>
+                        </li>
+                    </ul>
+                    <p class="mt-3 text-xs text-slate-500">Друг считается активным после 3 дней использования бота</p>
                 </div>
             </details>
+
         </div>
     </div>
 </section>
+
 
 
     <!-- ===== CTA ===== -->
@@ -653,59 +800,81 @@
     </section>
 
     <!-- ===== FOOTER (ПОЛНЫЙ) ===== -->
-    <footer class="border-t border-white/5 py-12">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <!-- Логотип -->
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
-                            <i class="fa-solid fa-bowl-food text-slate-900 text-lg"></i>
-                        </div>
-                        <span class="font-bold text-lg text-white">Карамелька <span class="text-amber-400">AI</span></span>
+<!-- ===== FOOTER (ПОЛНЫЙ) ===== -->
+<footer class="border-t border-white/5 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <!-- Логотип -->
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
+                        <i class="fa-solid fa-bowl-food text-slate-900 text-lg"></i>
                     </div>
-                    <p class="text-slate-500 text-sm">Ваш личный AI-шеф в Telegram</p>
+                    <span class="font-bold text-lg text-white">Карамелька <span class="text-amber-400">AI</span></span>
                 </div>
+                <p class="text-slate-500 text-sm mb-4">Ваш личный AI-шеф в Telegram</p>
                 
-                <!-- Навигация -->
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Навигация</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#features" class="text-slate-400 hover:text-white transition">Возможности</a></li>
-                        <li><a href="#demo" class="text-slate-400 hover:text-white transition">Примеры</a></li>
-                        <li><a href="#gamification" class="text-slate-400 hover:text-white transition">Розыгрыши</a></li>
-                        <li><a href="#pricing" class="text-slate-400 hover:text-white transition">Тарифы</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Соцсети -->
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Мы в сети</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="https://t.me/YOUR_BOT" target="_blank" class="text-slate-400 hover:text-white transition flex items-center gap-2"><i class="fa-brands fa-telegram"></i> Telegram-бот</a></li>
-                        <li><a href="https://t.me/karamelkafood" target="_blank" class="text-slate-400 hover:text-white transition flex items-center gap-2"><i class="fa-brands fa-telegram"></i> Канал с рецептами</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Поддержка -->
-                <div>
-                    <h4 class="font-semibold text-white mb-4">Поддержка</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="text-slate-400 hover:text-white transition">Политика конфиденциальности</a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-white transition">Пользовательское соглашение</a></li>
-                        <li><a href="#" class="text-slate-400 hover:text-white transition">Публичная оферта</a></li>
-                    </ul>
+                <!-- Конфиденциальность -->
+                <div class="bg-green-500/10 border border-green-500/20 rounded-lg p-3">
+                    <div class="flex items-start gap-2 text-xs">
+                        <i class="fa-solid fa-shield-check text-green-400 mt-0.5"></i>
+                        <div class="text-green-300 leading-relaxed">
+                            Ваши данные не сохраняются. Запросы отправляются напрямую к AI и удаляются после ответа.
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-                <div>© 2025 Карамелька AI. Все права защищены.</div>
-                <div class="flex gap-6">
-                    <a href="https://t.me/karamelkafood" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-telegram text-lg"></i></a>
-                </div>
+            <!-- Навигация -->
+            <div>
+                <h4 class="font-semibold text-white mb-4">Навигация</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#features" class="text-slate-400 hover:text-white transition">Возможности</a></li>
+                    <li><a href="#demo" class="text-slate-400 hover:text-white transition">Примеры</a></li>
+                    <li><a href="#gamification" class="text-slate-400 hover:text-white transition">Розыгрыши</a></li>
+                    <li><a href="#pricing" class="text-slate-400 hover:text-white transition">Тарифы</a></li>
+                </ul>
+            </div>
+            
+            <!-- Соцсети -->
+            <div>
+                <h4 class="font-semibold text-white mb-4">Мы в сети</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <a href="https://t.me/YOUR_BOT" target="_blank" class="text-slate-400 hover:text-white transition flex items-center gap-2">
+                            <i class="fa-brands fa-telegram"></i> Telegram-бот
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/karamelkafood" target="_blank" class="text-slate-400 hover:text-white transition flex items-center gap-2">
+                            <i class="fa-brands fa-telegram"></i> Канал с рецептами
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Поддержка -->
+            <div>
+                <h4 class="font-semibold text-white mb-4">Документы</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-slate-400 hover:text-white transition">Политика конфиденциальности</a></li>
+                    <li><a href="#" class="text-slate-400 hover:text-white transition">Пользовательское соглашение</a></li>
+                    <li><a href="#" class="text-slate-400 hover:text-white transition">Публичная оферта</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        
+        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+            <div>© 2025 Карамелька AI. Все права защищены.</div>
+            <div class="flex gap-6">
+                <a href="https://t.me/karamelkafood" target="_blank" class="hover:text-white transition">
+                    <i class="fa-brands fa-telegram text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 </div>
 
