@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Карамелька AI — Бесплатный кулинарный помощник в Telegram</title>
-    <meta name="description" content="Бесплатный AI-помощник: рецепты с расчётом калорий и цены, советы по готовке, лайфхаки по дому. Розыгрыши призов, уровни, достижения.">
+    <meta name="description" content="Бесплатный AI-помощник: рецепты с расчётом калорий и цены, советы по готовке, лайфхаки по дому. Розыгрыши призов.">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Наши стили -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -27,102 +20,157 @@
     <div class="blob blob-3"></div>
 </div>
 
-<!-- Canvas создаётся динамически в particles.js -->
-
 <!-- КОНТЕНТ -->
 <div class="content">
 
-    <!-- Навигация -->
-    <nav id="navbar" class="nav-sticky py-4">
-        <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
-                    <i class="fa-solid fa-bowl-food text-slate-900 text-lg"></i>
-                </div>
-                <span class="font-bold text-xl text-white">Карамелька <span class="text-amber-400">AI</span></span>
+<!-- ===== НАВИГАЦИЯ ===== -->
+<nav id="navbar" class="nav-sticky py-4">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
+                <i class="fa-solid fa-bowl-food text-slate-900 text-lg"></i>
+            </div>
+            <span class="font-bold text-xl text-white">Карамелька <span class="text-amber-400">AI</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+            <a href="#features" class="text-slate-300 hover:text-white transition text-sm font-medium">Возможности</a>
+            <a href="#demo" class="text-slate-300 hover:text-white transition text-sm font-medium">Примеры</a>
+            <a href="#gamification" class="text-slate-300 hover:text-white transition text-sm font-medium">Розыгрыши</a>
+            <a href="#pricing" class="text-slate-300 hover:text-white transition text-sm font-medium">Тарифы</a>
+        </div>
+        <div class="flex items-center gap-3">
+            <a href="https://t.me/karamelkafood" target="_blank" class="hidden sm:flex items-center gap-2 text-slate-300 hover:text-white transition text-sm"><i class="fa-brands fa-telegram"></i> Канал</a>
+            <a href="https://t.me/YOUR_BOT" target="_blank" class="btn-primary px-5 py-2.5 rounded-xl font-semibold text-sm"><i class="fa-solid fa-play mr-2"></i>Запустить</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="pt-32 pb-20 lg:pt-44 lg:pb-28">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 border border-green-500/30 text-sm mb-8 fade-up">
+            <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+            <span class="text-green-400 font-semibold">100% Бесплатно</span>
+            <span class="text-slate-400">• Работает 24/7 в Telegram</span>
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 fade-up delay-1">
+            Ваш личный <span class="gradient-text">AI Шеф-повар</span><br>
+            <span class="text-slate-300 text-3xl sm:text-4xl lg:text-5xl">в кармане</span>
+        </h1>
+        
+        <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 fade-up delay-2">
+            Рецепты с расчётом <span class="text-amber-400">калорий</span> и <span class="text-amber-400">стоимости</span>. 
+            Лайфхаки для кухни. Планы питания от <span class="text-purple-400">AI-диетолога</span>. 
+            Розыгрыши призов.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12 fade-up delay-3">
+            <a href="https://t.me/YOUR_BOT" target="_blank" class="btn-primary px-8 py-4 rounded-2xl font-bold text-lg gap-3">
+                <i class="fa-brands fa-telegram text-xl"></i> Попробовать бесплатно
             </a>
-            
-            <div class="hidden md:flex items-center gap-8">
-                <a href="#features" class="text-slate-300 hover:text-white transition text-sm font-medium">Возможности</a>
-                <a href="#demo" class="text-slate-300 hover:text-white transition text-sm font-medium">Примеры</a>
-                <a href="#gamification" class="text-slate-300 hover:text-white transition text-sm font-medium">Розыгрыши</a>
-                <a href="#pricing" class="text-slate-300 hover:text-white transition text-sm font-medium">Тарифы</a>
+            <a href="#demo" class="btn-secondary px-8 py-4 rounded-2xl font-semibold text-lg gap-2">
+                Как это работает <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto fade-up delay-4">
+            <div class="glass rounded-xl p-4 text-center">
+                <div class="text-2xl font-bold text-green-400">Бесплатно</div>
+                <div class="text-slate-500 text-sm">Рецепты и советы</div>
             </div>
-            
-            <div class="flex items-center gap-3">
-                <a href="https://t.me/karamelkafood" target="_blank" class="hidden sm:flex items-center gap-2 text-slate-300 hover:text-white transition text-sm">
-                    <i class="fa-brands fa-telegram"></i> Канал
-                </a>
-                <a href="https://t.me/YOUR_BOT" target="_blank" class="btn-primary px-5 py-2.5 rounded-xl font-semibold text-sm">
-                    <i class="fa-solid fa-play mr-2"></i>Запустить
-                </a>
+            <div class="glass rounded-xl p-4 text-center">
+                <div class="text-2xl font-bold text-amber-400">~280 ккал</div>
+                <div class="text-slate-500 text-sm">Расчёт КБЖУ</div>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <div class="text-2xl font-bold text-purple-400">~350₽</div>
+                <div class="text-slate-500 text-sm">Цена блюда</div>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <div class="text-2xl font-bold text-pink-400">🎁</div>
+                <div class="text-slate-500 text-sm">Розыгрыши</div>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <!-- HERO -->
-    <section class="pt-32 pb-20 lg:pt-44 lg:pb-28">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <!-- Бейдж -->
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 border border-green-500/30 text-sm mb-8">
-                <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-                <span class="text-green-400 font-semibold">100% Бесплатно</span>
-                <span class="text-slate-400">• Работает 24/7 в Telegram</span>
+<!-- ===== 4 РАЗДЕЛА ===== -->
+<section id="features" class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-16 fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Что умеет <span class="gradient-text-purple">Помощник</span></h2>
+            <p class="text-slate-400">4 раздела — 3 полностью бесплатных</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Рецепты -->
+            <div class="feature-card glass rounded-2xl p-8 relative fade-up">
+                <span class="absolute top-4 right-4 badge-free text-xs font-bold px-3 py-1 rounded-full">БЕСПЛАТНО</span>
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-utensils text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">🍳 Помощь с рецептами</h3>
+                <p class="text-slate-400 text-sm mb-4">Напишите продукты — получите рецепт с расчётами:</p>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <span class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-clock text-amber-400 w-4"></i> Время</span>
+                    <span class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-star text-amber-400 w-4"></i> Сложность</span>
+                    <span class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-fire text-amber-400 w-4"></i> КБЖУ</span>
+                    <span class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-ruble-sign text-amber-400 w-4"></i> Цена</span>
+                </div>
+                <div class="mt-4 pt-4 border-t border-white/5 text-xs text-slate-500">25⚡️ за запрос</div>
             </div>
             
-            <!-- Заголовок -->
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-                Ваш личный <span class="gradient-text">AI Шеф-повар</span><br>
-                <span class="text-slate-300 text-3xl sm:text-4xl lg:text-5xl">в кармане</span>
-            </h1>
-            
-            <!-- Описание -->
-            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-                Рецепты с расчётом <span class="text-amber-400">калорий</span> и <span class="text-amber-400">стоимости</span>. 
-                Лайфхаки для кухни. Планы питания от <span class="text-purple-400">AI-диетолога</span>. 
-                Розыгрыши призов.
-            </p>
-            
-            <!-- Кнопки -->
-            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                <a href="https://t.me/YOUR_BOT" target="_blank" class="btn-primary px-8 py-4 rounded-2xl font-bold text-lg gap-3">
-                    <i class="fa-brands fa-telegram text-xl"></i> Попробовать бесплатно
-                </a>
-                <a href="#demo" class="btn-secondary px-8 py-4 rounded-2xl font-semibold text-lg gap-2">
-                    Как это работает <i class="fa-solid fa-arrow-down"></i>
-                </a>
+            <!-- Советы -->
+            <div class="feature-card glass rounded-2xl p-8 relative fade-up delay-1">
+                <span class="absolute top-4 right-4 badge-free text-xs font-bold px-3 py-1 rounded-full">БЕСПЛАТНО</span>
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-lightbulb text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">💡 Кулинарные советы</h3>
+                <p class="text-slate-400 text-sm mb-4">Секреты шеф-повара и лайфхаки:</p>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-yellow-400 w-4"></i> Как правильно пожарить стейк</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-yellow-400 w-4"></i> Секрет сочных чебуреков</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-yellow-400 w-4"></i> Почему тесто не поднимается</li>
+                </ul>
+                <div class="mt-4 pt-4 border-t border-white/5 text-xs text-slate-500">15⚡️ за запрос</div>
             </div>
             
-            <!-- Статистика -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-                <div class="glass rounded-xl p-4 text-center">
-                    <div class="text-2xl font-bold text-green-400">Бесплатно</div>
-                    <div class="text-slate-500 text-sm">Рецепты и советы</div>
+            <!-- Дом -->
+            <div class="feature-card glass rounded-2xl p-8 relative fade-up delay-2">
+                <span class="absolute top-4 right-4 badge-free text-xs font-bold px-3 py-1 rounded-full">БЕСПЛАТНО</span>
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-house text-white text-2xl"></i>
                 </div>
-                <div class="glass rounded-xl p-4 text-center">
-                    <div class="text-2xl font-bold text-amber-400">~280 ккал</div>
-                    <div class="text-slate-500 text-sm">Расчёт КБЖУ</div>
+                <h3 class="text-xl font-bold text-white mb-3">🏠 Помощь по дому</h3>
+                <p class="text-slate-400 text-sm mb-4">Лайфхаки по уборке и хозяйству:</p>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-emerald-400 w-4"></i> Как отмыть плиту без химии</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-emerald-400 w-4"></i> Свежесть в холодильнике</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-emerald-400 w-4"></i> Как вывести любое пятно</li>
+                </ul>
+                <div class="mt-4 pt-4 border-t border-white/5 text-xs text-slate-500">15⚡️ за запрос</div>
+            </div>
+            
+            <!-- Планирование -->
+            <div class="feature-card glass rounded-2xl p-8 relative border border-purple-500/30 fade-up delay-3">
+                <span class="absolute top-4 right-4 badge-premium text-xs font-bold px-3 py-1 rounded-full">PREMIUM</span>
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-calendar-check text-white text-2xl"></i>
                 </div>
-                <div class="glass rounded-xl p-4 text-center">
-                    <div class="text-2xl font-bold text-purple-400">~350₽</div>
-                    <div class="text-slate-500 text-sm">Цена блюда</div>
-                </div>
-                <div class="glass rounded-xl p-4 text-center">
-                    <div class="text-2xl font-bold text-pink-400">🎁</div>
-                    <div class="text-slate-500 text-sm">Розыгрыши</div>
+                <h3 class="text-xl font-bold text-white mb-3">📅 Планирование питания</h3>
+                <p class="text-slate-400 text-sm mb-4">AI-диетолог составит меню:</p>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-purple-400 w-4"></i> Меню на день/неделю с КБЖУ</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-purple-400 w-4"></i> ПП-рецепты и диеты</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-purple-400 w-4"></i> Подсчёт съеденных калорий</li>
+                </ul>
+                <div class="mt-4 pt-4 border-t border-white/5 text-xs flex justify-between">
+                    <span class="text-slate-500">40⚡️ за запрос</span>
+                    <span class="text-green-400">или 10 друзей!</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Здесь остальные секции... -->
-    <!-- Я дам их в следующем сообщении, чтобы не обрезалось -->
-
-</div>
-
-<!-- Скрипты -->
-<script src="js/particles.js"></script>
-<script src="js/main.js"></script>
-
-</body>
-</html>
+    </div>
+</section>
