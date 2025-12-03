@@ -1,58 +1,47 @@
 /* ========================================
-   КАРАМЕЛЬКА AI — Стили
+   КАРАМЕЛЬКА AI — Стили (финал)
    ======================================== */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
-body {
-    font-family: 'Inter', sans-serif;
-    background: #08080c;
-    color: #e2e8f0;
-    overflow-x: hidden;
-    min-height: 100vh;
-}
+body { font-family: 'Inter', sans-serif; background: #08080c; color: #e2e8f0; overflow-x: hidden; min-height: 100vh; }
 
 /* ========== CANVAS ========== */
 #particles-canvas {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     z-index: 0;
     pointer-events: none;
 }
 
-/* ========== ГРАДИЕНТНЫЕ ПЯТНА (с blur) ========== */
+/* ========== ГРАДИЕНТНЫЕ ПЯТНА (уменьшенная яркость) ========== */
 .bg-blobs {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     z-index: 0;
     pointer-events: none;
     overflow: hidden;
-    filter: blur(60px); /* Дополнительный blur для мягкости */
+    filter: blur(80px); /* Увеличен blur */
 }
 
 .blob {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.2;
-    animation: blobFloat 25s ease-in-out infinite;
+    filter: blur(100px); /* Увеличен blur */
+    opacity: 0.12; /* Снижено с 0.2 до 0.12 — текст не висит в воздухе */
+    animation: blobFloat 30s ease-in-out infinite;
 }
 
 .blob-1 { width: 600px; height: 600px; background: #7c3aed; top: -200px; left: -100px; }
-.blob-2 { width: 500px; height: 500px; background: #f59e0b; top: 50%; right: -150px; animation-delay: -8s; }
-.blob-3 { width: 400px; height: 400px; background: #ec4899; bottom: -100px; left: 30%; animation-delay: -16s; }
+.blob-2 { width: 500px; height: 500px; background: #f59e0b; top: 50%; right: -150px; animation-delay: -10s; }
+.blob-3 { width: 400px; height: 400px; background: #ec4899; bottom: -100px; left: 30%; animation-delay: -20s; }
 
 @keyframes blobFloat {
     0%, 100% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(30px, -20px) scale(1.05); }
-    66% { transform: translate(-20px, 15px) scale(0.95); }
+    33% { transform: translate(40px, -30px) scale(1.08); }
+    66% { transform: translate(-30px, 20px) scale(0.92); }
 }
 
 /* ========== КОНТЕНТ ========== */
@@ -60,10 +49,10 @@ body {
 
 /* ========== GLASS ========== */
 .glass {
-    background: rgba(15, 15, 25, 0.6);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(15, 15, 25, 0.7); /* Увеличена непрозрачность */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* ========== ГРАДИЕНТЫ ========== */
@@ -126,7 +115,7 @@ body {
 .feature-card { transition: all 0.3s ease; }
 .feature-card:hover {
     transform: translateY(-4px);
-    background: rgba(40, 40, 60, 0.5);
+    background: rgba(40, 40, 60, 0.6);
 }
 
 /* ========== БЕЙДЖИ ========== */
@@ -148,34 +137,28 @@ details summary .fa-chevron-down { transition: transform 0.3s ease; }
 /* ========== ССЫЛКИ ========== */
 a { color: inherit; text-decoration: none; }
 
-/* ========== АНИМАЦИИ ПОЯВЛЕНИЯ ПРИ СКРОЛЛЕ ========== */
+/* ========== АНИМАЦИИ СКРОЛЛА ========== */
 .fade-up {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .fade-up.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* Задержки для последовательного появления */
 .delay-1 { transition-delay: 0.1s; }
 .delay-2 { transition-delay: 0.2s; }
 .delay-3 { transition-delay: 0.3s; }
 .delay-4 { transition-delay: 0.4s; }
 
 /* ========== ПУЛЬСАЦИЯ ========== */
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
 .animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
 
 /* ========== АДАПТИВ ========== */
 @media (max-width: 768px) {
-    .blob { opacity: 0.1; }
+    .blob { opacity: 0.08; }
     .blob-1 { width: 300px; height: 300px; }
     .blob-2 { width: 250px; height: 250px; }
     .blob-3 { width: 200px; height: 200px; }
