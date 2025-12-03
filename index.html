@@ -174,111 +174,158 @@
         </div>
     </section>
 
-    <!-- ===== ДЕМО РЕЦЕПТОВ (ПОЛНАЯ ВЕРСИЯ) ===== -->
-    <section id="demo" class="py-20">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-12 fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Как выглядят рецепты</h2>
-                <p class="text-slate-400">Реальные примеры от Помощника</p>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-8">
-                <!-- Обычный рецепт -->
-                <div class="glass rounded-2xl p-6 relative overflow-hidden fade-up">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-amber-600"></div>
-                    <div class="flex items-center gap-2 mb-4 pt-2">
-                        <span class="badge-free text-white text-xs font-bold px-2 py-0.5 rounded">БЕСПЛАТНО</span>
-                        <span class="text-slate-500 text-xs">Обычный рецепт</span>
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-2">🍲 Борщ с говядиной</h4>
-                    <p class="text-slate-500 text-xs mb-4">Наваристый суп с мясом, овощами и свеклой</p>
-                    <div class="flex flex-wrap gap-2 mb-4 text-xs">
-                        <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">⏱️ 150 мин</span>
-                        <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">👨‍👩‍👧‍👦 6 порций</span>
-                        <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">⭐️ ★★★☆☆</span>
-                    </div>
-                    <div class="bg-gradient-to-r from-amber-500/20 to-transparent border-l-2 border-amber-400 rounded-r-xl p-4 mb-4">
-                        <div class="grid grid-cols-2 gap-3 text-sm">
-                            <div>
-                                <span class="text-slate-400 text-xs">💰 Стоимость</span>
-                                <div class="text-white font-bold">350₽</div>
+<!-- ===== ДЕМО РЕЦЕПТОВ (ПОЛНАЯ ВЕРСИЯ) ===== -->
+<section id="demo" class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12 fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Как выглядят рецепты</h2>
+            <p class="text-slate-400">Реальные примеры от Помощника</p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-8">
+            <!-- Обычный рецепт -->
+            <div class="glass rounded-2xl p-6 relative overflow-hidden fade-up">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-amber-600"></div>
+                <div class="flex items-center gap-2 mb-4 pt-2">
+                    <span class="badge-free text-white text-xs font-bold px-2 py-0.5 rounded">БЕСПЛАТНО</span>
+                    <span class="text-slate-500 text-xs">Обычный рецепт</span>
+                </div>
+                <h4 class="text-lg font-bold text-white mb-2">🍲 Борщ с говядиной</h4>
+                <p class="text-slate-500 text-xs mb-4">Наваристый суп с мясом, овощами и свеклой</p>
+                
+                <!-- Мета-информация -->
+                <div class="flex flex-wrap gap-2 mb-4 text-xs">
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1">
+                        <i class="fa-solid fa-clock text-slate-400"></i> 150 мин
+                    </span>
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1">
+                        <i class="fa-solid fa-utensils text-slate-400"></i> 6 порций
+                    </span>
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">⭐️ ★★★☆☆</span>
+                </div>
+                
+                <!-- КБЖУ и цена -->
+                <div class="bg-gradient-to-r from-amber-500/20 to-transparent border-l-4 border-amber-400 rounded-r-xl p-4 mb-4">
+                    <div class="grid grid-cols-2 gap-y-3 gap-x-4 text-sm">
+                        <div>
+                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
+                                <i class="fa-solid fa-wallet"></i> Стоимость
                             </div>
-                            <div>
-                                <span class="text-slate-400 text-xs">🍽️ За порцию</span>
-                                <div class="text-white font-bold">58₽</div>
-                            </div>
-                            <div>
-                                <span class="text-slate-400 text-xs">⚡️ Калории</span>
-                                <div class="text-amber-400 font-bold">280 ккал</div>
-                            </div>
-                            <div>
-                                <span class="text-slate-400 text-xs">📊 БЖУ</span>
-                                <div class="text-white font-bold">20/15/18г</div>
-                            </div>
+                            <div class="text-white font-bold">350₽</div>
                         </div>
-                    </div>
-                    <div class="text-xs text-slate-400 leading-relaxed">
-                        <span class="text-amber-400 font-semibold">👨‍🍳 Совет:</span> Добавьте болгарский перец для насыщенного вкуса
+                        <div>
+                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
+                                <i class="fa-solid fa-plate-wheat"></i> За порцию
+                            </div>
+                            <div class="text-white font-bold">58₽</div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
+                                <i class="fa-solid fa-fire"></i> Калории
+                            </div>
+                            <div class="text-amber-400 font-bold">280 ккал</div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
+                                <i class="fa-solid fa-chart-simple"></i> БЖУ
+                            </div>
+                            <div class="text-white font-bold">20/15/18г</div>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- ПП рецепт -->
-                <div class="glass rounded-2xl p-6 relative overflow-hidden fade-up delay-1">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-violet-600"></div>
-                    <div class="flex items-center gap-2 mb-4 pt-2">
-                        <span class="badge-premium text-white text-xs font-bold px-2 py-0.5 rounded">PREMIUM</span>
-                        <span class="text-slate-500 text-xs">ПП-рецепт</span>
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-2">🍽️ Индейка с рисом и овощами</h4>
-                    <p class="text-slate-500 text-xs mb-4">Сбалансированное блюдо для правильного питания</p>
-                    <div class="flex flex-wrap gap-2 mb-4 text-xs">
-                        <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">⏱️ 35 мин</span>
-                        <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">🍽 1 порция</span>
-                        <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">⭐️ ★★☆☆☆</span>
-                    </div>
-                    <div class="bg-gradient-to-r from-green-500/20 to-transparent border-l-2 border-green-400 rounded-r-xl p-4 mb-4">
-                        <div class="grid grid-cols-2 gap-3 text-sm">
-                            <div>
-                                <span class="text-slate-400 text-xs">⚡️ Калории</span>
-                                <div class="text-green-400 font-bold">450 ккал</div>
-                            </div>
-                            <div>
-                                <span class="text-slate-400 text-xs">🥩 Белки</span>
-                                <div class="text-white font-bold">35 г</div>
-                            </div>
-                            <div>
-                                <span class="text-slate-400 text-xs">🧈 Жиры</span>
-                                <div class="text-white font-bold">10 г</div>
-                            </div>
-                            <div>
-                                <span class="text-slate-400 text-xs">🍞 Углеводы</span>
-                                <div class="text-white font-bold">55 г</div>
-                            </div>
+                <!-- Совет -->
+                <div class="bg-slate-800/40 rounded-xl p-3 text-xs text-slate-300 leading-relaxed">
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-lightbulb text-amber-400 mt-0.5"></i>
+                        <div>
+                            <span class="text-amber-400 font-semibold">Совет:</span> Добавьте болгарский перец для насыщенного вкуса
                         </div>
-                    </div>
-                    <div class="text-xs text-slate-400 leading-relaxed">
-                        <span class="text-green-400 font-semibold">💡 Диетолог:</span> Добавьте томатную пасту для насыщенного вкуса
                     </div>
                 </div>
             </div>
             
-            <!-- Калькулятор калорий -->
-            <div class="mt-8 glass rounded-2xl p-6 border border-blue-500/20 fade-up delay-2">
-                <div class="flex flex-col md:flex-row items-center gap-6">
-                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
-                        <i class="fa-solid fa-calculator text-white text-2xl"></i>
+            <!-- ПП рецепт -->
+            <div class="glass rounded-2xl p-6 relative overflow-hidden fade-up delay-1">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-violet-600"></div>
+                <div class="flex items-center gap-2 mb-4 pt-2">
+                    <span class="badge-premium text-white text-xs font-bold px-2 py-0.5 rounded">PREMIUM</span>
+                    <span class="text-slate-500 text-xs">ПП-рецепт</span>
+                </div>
+                <h4 class="text-lg font-bold text-white mb-2">🍽️ Индейка с рисом и овощами</h4>
+                <p class="text-slate-500 text-xs mb-4">Сбалансированное блюдо для правильного питания</p>
+                
+                <!-- Мета-информация -->
+                <div class="flex flex-wrap gap-2 mb-4 text-xs">
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1">
+                        <i class="fa-solid fa-clock text-slate-400"></i> 35 мин
+                    </span>
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg flex items-center gap-1">
+                        <i class="fa-solid fa-utensils text-slate-400"></i> 1 порция
+                    </span>
+                    <span class="bg-slate-700/50 px-3 py-1.5 rounded-lg">⭐️ ★★☆☆☆</span>
+                </div>
+                
+                <!-- КБЖУ -->
+                <div class="bg-gradient-to-r from-green-500/20 to-transparent border-l-4 border-green-400 rounded-r-xl p-4 mb-4">
+                    <div class="grid grid-cols-2 gap-y-3 gap-x-4 text-sm">
+                        <div>
+                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
+                                <i class="fa-solid fa-fire"></i> Калории
+                            </div>
+                            <div class="text-green-400 font-bold">450 ккал</div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
+                                <i class="fa-solid fa-drumstick-bite"></i> Белки
+                            </div>
+                            <div class="text-white font-bold">35 г</div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
+                                <i class="fa-solid fa-droplet"></i> Жиры
+                            </div>
+                            <div class="text-white font-bold">10 г</div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1 text-slate-400 text-xs mb-1">
+                                <i class="fa-solid fa-wheat-awn"></i> Углеводы
+                            </div>
+                            <div class="text-white font-bold">55 г</div>
+                        </div>
                     </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h4 class="text-lg font-bold text-white mb-2">🔢 Подсчёт калорий</h4>
-                        <p class="text-slate-400 text-sm">
-                            Напишите <span class="text-white font-medium">«Я съел борщ 250г, хлеб 30г, котлету 120г»</span> — 
-                            Помощник посчитает калории, белки, жиры, углеводы.
-                        </p>
+                </div>
+                
+                <!-- Совет диетолога -->
+                <div class="bg-slate-800/40 rounded-xl p-3 text-xs text-slate-300 leading-relaxed">
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-user-doctor text-green-400 mt-0.5"></i>
+                        <div>
+                            <span class="text-green-400 font-semibold">Диетолог:</span> Добавьте томатную пасту для насыщенного вкуса
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <!-- Калькулятор калорий -->
+        <div class="mt-8 glass rounded-2xl p-6 border border-blue-500/20 fade-up delay-2">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
+                    <i class="fa-solid fa-calculator text-white text-2xl"></i>
+                </div>
+                <div class="flex-1 text-center md:text-left">
+                    <h4 class="text-lg font-bold text-white mb-2">🔢 Подсчёт калорий</h4>
+                    <p class="text-slate-400 text-sm">
+                        Напишите <span class="text-white font-medium">«Я съел борщ 250г, хлеб 30г, котлету 120г»</span> — 
+                        Помощник посчитает калории, белки, жиры, углеводы.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- ===== ГЕЙМИФИКАЦИЯ ===== -->
     <section id="gamification" class="py-20">
@@ -363,180 +410,228 @@
         </div>
     </section>
 
-    <!-- ===== СРАВНЕНИЕ (ПОЛНАЯ ВЕРСИЯ) ===== -->
-    <section class="py-20">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="text-center mb-12 fade-up">
-                <h2 class="text-3xl font-bold text-white mb-4">Бесплатно vs <span class="gradient-text-purple">Premium</span></h2>
-            </div>
-            <div class="glass rounded-2xl overflow-hidden fade-up">
-                <table class="w-full text-sm">
-                    <thead>
-                        <tr class="border-b border-white/10">
-                            <th class="text-left p-5 text-slate-300 font-semibold">Функция</th>
-                            <th class="p-5 text-center text-slate-300 font-semibold">Бесплатно</th>
-                            <th class="p-5 text-center text-purple-400 bg-purple-500/10 font-semibold">Premium ⭐</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-white/5">
-                        <tr>
-                            <td class="p-5 text-white">Рецепты, советы, дом</td>
-                            <td class="p-5 text-center"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
-                            <td class="p-5 text-center bg-purple-500/5"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 text-white">Розыгрыши и достижения</td>
-                            <td class="p-5 text-center"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
-                            <td class="p-5 text-center bg-purple-500/5 text-purple-300"><i class="fa-solid fa-check text-green-400 text-lg"></i> + приоритет</td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 text-white">Энергия</td>
-                            <td class="p-5 text-center text-slate-400">100 ⚡️</td>
-                            <td class="p-5 text-center bg-purple-500/5 text-purple-400 font-semibold">300 ⚡️</td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 text-white">Расход энергии</td>
-                            <td class="p-5 text-center text-slate-400">Стандартный</td>
-                            <td class="p-5 text-center bg-purple-500/5 text-purple-400 font-semibold">-50%</td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 text-white">Скорость ответов</td>
-                            <td class="p-5 text-center text-slate-400">Обычная</td>
-                            <td class="p-5 text-center bg-purple-500/5 text-purple-400 font-semibold">x2 быстрее</td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 text-white">Планирование + ПП + Калории</td>
-                            <td class="p-5 text-center text-slate-500">10 друзей</td>
-                            <td class="p-5 text-center bg-purple-500/5"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+<!-- ===== СРАВНЕНИЕ (ПОЛНАЯ ВЕРСИЯ) ===== -->
+<section class="py-20">
+    <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center mb-12 fade-up">
+            <h2 class="text-3xl font-bold text-white mb-4">Бесплатно vs <span class="gradient-text-purple">Premium</span></h2>
+            <p class="text-slate-400">Основные функции доступны всем. Premium — для тех, кто хочет больше</p>
         </div>
-    </section>
+        <div class="glass rounded-2xl overflow-hidden fade-up">
+            <table class="w-full text-sm">
+                <thead>
+                    <tr class="border-b border-white/10">
+                        <th class="text-left p-5 text-slate-300 font-semibold">Функция</th>
+                        <th class="p-5 text-center text-slate-300 font-semibold">Бесплатно</th>
+                        <th class="p-5 text-center text-purple-400 bg-purple-500/10 font-semibold">Premium ⭐</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                    <tr>
+                        <td class="p-5 text-white">Рецепты по ингредиентам</td>
+                        <td class="p-5 text-center"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
+                        <td class="p-5 text-center bg-purple-500/5"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 text-white">Кулинарные советы</td>
+                        <td class="p-5 text-center"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
+                        <td class="p-5 text-center bg-purple-500/5"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 text-white">Помощь по дому</td>
+                        <td class="p-5 text-center"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
+                        <td class="p-5 text-center bg-purple-500/5"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 text-white">Розыгрыши и достижения</td>
+                        <td class="p-5 text-center"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
+                        <td class="p-5 text-center bg-purple-500/5 text-purple-300"><i class="fa-solid fa-check text-green-400 text-lg"></i> + приоритет</td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 text-white">Энергия (лимит запросов)</td>
+                        <td class="p-5 text-center text-slate-400">100 ⚡️</td>
+                        <td class="p-5 text-center bg-purple-500/5 text-purple-400 font-semibold">300 ⚡️</td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 text-white">Расход энергии</td>
+                        <td class="p-5 text-center text-slate-400">Стандартный</td>
+                        <td class="p-5 text-center bg-purple-500/5 text-purple-400 font-semibold">-50% расход</td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 text-white">Скорость ответов</td>
+                        <td class="p-5 text-center text-slate-400">Обычная</td>
+                        <td class="p-5 text-center bg-purple-500/5 text-purple-400 font-semibold">х2 быстрее</td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 text-white">Планирование питания</td>
+                        <td class="p-5 text-center text-slate-500">10 друзей</td>
+                        <td class="p-5 text-center bg-purple-500/5"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="p-5 text-white">ПП-рецепты и подсчёт калорий</td>
+                        <td class="p-5 text-center text-slate-500">—</td>
+                        <td class="p-5 text-center bg-purple-500/5"><i class="fa-solid fa-check text-green-400 text-lg"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 
-    <!-- ===== ТАРИФЫ ===== -->
-    <section id="pricing" class="py-20">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-12 fade-up">
-                <h2 class="text-3xl font-bold text-white mb-4">Тарифы <span class="gradient-text-purple">Premium</span></h2>
-                <p class="text-slate-400">3 дня бесплатно • <span class="text-green-400">Без автопродления!</span></p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div class="glass rounded-2xl p-6 flex flex-col fade-up">
-                    <h3 class="text-lg font-bold text-white mb-1">Месяц</h3>
-                    <p class="text-slate-400 text-sm mb-4">Для знакомства</p>
-                    <div class="mb-6">
-                        <span class="text-4xl font-extrabold text-white">199</span>
-                        <span class="text-slate-400">₽</span>
-                    </div>
-                    <ul class="space-y-3 mb-8 flex-grow text-sm">
-                        <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-green-400 w-4"></i> Все Premium функции</li>
-                        <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-green-400 w-4"></i> 300⚡️, -50% расход</li>
-                    </ul>
-                    <a href="https://t.me/YOUR_BOT" target="_blank" class="btn-secondary w-full py-3 rounded-xl font-semibold text-center">Выбрать</a>
-                </div>
-                
-                <div class="card-popular glass rounded-2xl p-6 flex flex-col relative scale-105 z-10 fade-up delay-1">
-                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-400 to-amber-600 text-slate-900 font-bold px-4 py-1 rounded-full text-xs">🔥 Популярный</div>
-                    <h3 class="text-lg font-bold text-white mb-1">3 месяца</h3>
-                    <p class="text-slate-400 text-sm mb-4">Экономия 17%</p>
-                    <div class="mb-6">
-                        <span class="text-4xl font-extrabold text-white">499</span>
-                        <span class="text-slate-400">₽</span>
-                        <span class="block text-sm text-slate-500">~166₽/мес</span>
-                    </div>
-                    <ul class="space-y-3 mb-8 flex-grow text-sm">
-                        <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-green-400 w-4"></i> Все Premium функции</li>
-                        <li class="flex items-center gap-2 text-amber-400"><i class="fa-solid fa-gift text-amber-400 w-4"></i> +3 дня бесплатно</li>
-                    </ul>
-                    <a href="https://t.me/YOUR_BOT" target="_blank" class="btn-primary w-full py-3 rounded-xl font-bold text-center">Выбрать</a>
-                </div>
-                
-                <div class="glass rounded-2xl p-6 flex flex-col fade-up delay-2">
-                    <h3 class="text-lg font-bold text-white mb-1">Год</h3>
-                    <p class="text-slate-400 text-sm mb-4">Макс. экономия</p>
-                    <div class="mb-6">
-                        <span class="text-4xl font-extrabold text-white">1490</span>
-                        <span class="text-slate-400">₽</span>
-                        <span class="block text-sm text-slate-500">~124₽/мес</span>
-                    </div>
-                    <ul class="space-y-3 mb-8 flex-grow text-sm">
-                        <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-green-400 w-4"></i> Все Premium функции</li>
-                        <li class="flex items-center gap-2 text-green-400"><i class="fa-solid fa-percent w-4"></i> Экономия 38%</li>
-                    </ul>
-                    <a href="https://t.me/YOUR_BOT" target="_blank" class="btn-secondary w-full py-3 rounded-xl font-semibold text-center">Выбрать</a>
-                </div>
-            </div>
-            
-            <div class="mt-10 text-center fade-up delay-3">
-                <div class="inline-flex flex-wrap justify-center gap-4">
-                    <a href="https://t.me/YOUR_BOT" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-green-500/10 border border-green-500/30 text-green-400 font-medium hover:bg-green-500/20 transition">
-                        <i class="fa-solid fa-gift"></i> 3 дня бесплатно
-                    </a>
-                    <a href="https://t.me/YOUR_BOT" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-400 font-medium hover:bg-blue-500/20 transition">
-                        <i class="fa-solid fa-bolt"></i> 1 день за 1₽
-                    </a>
-                </div>
-            </div>
-            
-            <div class="mt-8 text-center fade-up delay-4">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/30">
-                    <i class="fa-solid fa-shield-check text-green-400"></i>
-                    <span class="text-green-400 text-sm font-medium">Без автопродления!</span>
-                    <span class="text-slate-400 text-sm">За сутки до конца придёт напоминание</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ===== FAQ ===== -->
-    <section class="py-20">
-        <div class="max-w-3xl mx-auto px-4">
-            <div class="text-center mb-12 fade-up">
-                <h2 class="text-3xl font-bold text-white mb-4">Частые вопросы</h2>
+<!-- ===== ТАРИФЫ ===== -->
+<section id="pricing" class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12 fade-up">
+            <h2 class="text-3xl font-bold text-white mb-4">Тарифы <span class="gradient-text-purple">Premium</span></h2>
+            <p class="text-slate-400">3 дня бесплатно • <span class="text-green-400">Без автопродления!</span></p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <!-- Месяц -->
+            <div class="glass rounded-2xl p-6 flex flex-col fade-up">
+                <h3 class="text-lg font-bold text-white mb-1">Месяц</h3>
+                <p class="text-slate-400 text-sm mb-4">Для знакомства</p>
+                <div class="mb-6">
+                    <span class="text-4xl font-extrabold text-white">199</span>
+                    <span class="text-slate-400">₽</span>
+                </div>
+                <ul class="space-y-3 mb-8 flex-grow text-sm">
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-green-400 w-4"></i> Все Premium функции</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-bolt text-amber-400 w-4"></i> 300⚡️ энергии</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-gauge-high text-purple-400 w-4"></i> -50% расход, х2 скорость</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-calendar-check text-blue-400 w-4"></i> Планирование и ПП</li>
+                </ul>
+                <a href="https://t.me/YOUR_BOT" target="_blank" class="btn-secondary w-full py-3 rounded-xl font-semibold text-center">Выбрать</a>
             </div>
-            <div class="space-y-4">
-                <details class="glass rounded-xl group fade-up" open>
-                    <summary class="p-5 flex items-center justify-between text-white font-medium cursor-pointer">
-                        Бот действительно бесплатный?
-                        <i class="fa-solid fa-chevron-down text-slate-400"></i>
-                    </summary>
-                    <div class="px-5 pb-5 text-slate-400 text-sm">
-                        <b class="text-green-400">Да!</b> Рецепты, советы и помощь по дому — бесплатно. 100⚡️ восстанавливаются каждый день.
-                    </div>
-                </details>
-                <details class="glass rounded-xl group fade-up delay-1">
-                    <summary class="p-5 flex items-center justify-between text-white font-medium cursor-pointer">
-                        Подписка продлевается автоматически?
-                        <i class="fa-solid fa-chevron-down text-slate-400"></i>
-                    </summary>
-                    <div class="px-5 pb-5 text-slate-400 text-sm">
-                        <b class="text-green-400">Нет!</b> За сутки до окончания вы получите уведомление и сами решите — продлевать или нет.
-                    </div>
-                </details>
-                <details class="glass rounded-xl group fade-up delay-2">
-                    <summary class="p-5 flex items-center justify-between text-white font-medium cursor-pointer">
-                        Это лотерея?
-                        <i class="fa-solid fa-chevron-down text-slate-400"></i>
-                    </summary>
-                    <div class="px-5 pb-5 text-slate-400 text-sm">
-                        <b class="text-purple-400">Нет.</b> Розыгрыши — благодарность активным участникам канала.
-                    </div>
-                </details>
-                <details class="glass rounded-xl group fade-up delay-3">
-                    <summary class="p-5 flex items-center justify-between text-white font-medium cursor-pointer">
-                        Как получить Планирование бесплатно?
-                        <i class="fa-solid fa-chevron-down text-slate-400"></i>
-                    </summary>
-                    <div class="px-5 pb-5 text-slate-400 text-sm">
-                        Пригласите 10 друзей = 1 месяц, 20 = 3 месяца, 30 = навсегда.
-                    </div>
-                </details>
+            
+            <!-- 3 месяца -->
+            <div class="card-popular glass rounded-2xl p-6 flex flex-col relative scale-105 z-10 fade-up delay-1">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-400 to-amber-600 text-slate-900 font-bold px-4 py-1 rounded-full text-xs">🔥 Популярный</div>
+                <h3 class="text-lg font-bold text-white mb-1">3 месяца</h3>
+                <p class="text-slate-400 text-sm mb-4">Экономия 17%</p>
+                <div class="mb-6">
+                    <span class="text-4xl font-extrabold text-white">499</span>
+                    <span class="text-slate-400">₽</span>
+                    <span class="block text-sm text-slate-500">~166₽/мес</span>
+                </div>
+                <ul class="space-y-3 mb-8 flex-grow text-sm">
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-green-400 w-4"></i> Все Premium функции</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-bolt text-amber-400 w-4"></i> 300⚡️ энергии</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-gauge-high text-purple-400 w-4"></i> -50% расход, х2 скорость</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-calendar-check text-blue-400 w-4"></i> Планирование и ПП</li>
+                    <li class="flex items-center gap-2 text-amber-400"><i class="fa-solid fa-gift text-amber-400 w-4"></i> +3 дня бесплатно</li>
+                </ul>
+                <a href="https://t.me/YOUR_BOT" target="_blank" class="btn-primary w-full py-3 rounded-xl font-bold text-center">Выбрать</a>
+            </div>
+            
+            <!-- Год -->
+            <div class="glass rounded-2xl p-6 flex flex-col fade-up delay-2">
+                <h3 class="text-lg font-bold text-white mb-1">Год</h3>
+                <p class="text-slate-400 text-sm mb-4">Макс. экономия</p>
+                <div class="mb-6">
+                    <span class="text-4xl font-extrabold text-white">1490</span>
+                    <span class="text-slate-400">₽</span>
+                    <span class="block text-sm text-slate-500">~124₽/мес</span>
+                </div>
+                <ul class="space-y-3 mb-8 flex-grow text-sm">
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-check text-green-400 w-4"></i> Все Premium функции</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-bolt text-amber-400 w-4"></i> 300⚡️ энергии</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-gauge-high text-purple-400 w-4"></i> -50% расход, х2 скорость</li>
+                    <li class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-calendar-check text-blue-400 w-4"></i> Планирование и ПП</li>
+                    <li class="flex items-center gap-2 text-green-400"><i class="fa-solid fa-percent w-4"></i> Экономия 38%</li>
+                </ul>
+                <a href="https://t.me/YOUR_BOT" target="_blank" class="btn-secondary w-full py-3 rounded-xl font-semibold text-center">Выбрать</a>
             </div>
         </div>
-    </section>
+        
+        <div class="mt-10 text-center fade-up delay-3">
+            <div class="inline-flex flex-wrap justify-center gap-4">
+                <a href="https://t.me/YOUR_BOT" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-green-500/10 border border-green-500/30 text-green-400 font-medium hover:bg-green-500/20 transition">
+                    <i class="fa-solid fa-gift"></i> 3 дня бесплатно
+                </a>
+                <a href="https://t.me/YOUR_BOT" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-400 font-medium hover:bg-blue-500/20 transition">
+                    <i class="fa-solid fa-bolt"></i> 1 день за 1₽
+                </a>
+            </div>
+        </div>
+        
+        <!-- УБРАНО ДУБЛИРОВАНИЕ — оставлена только одна инфо -->
+        <div class="mt-8 text-center text-sm text-slate-400 fade-up delay-4">
+            <i class="fa-solid fa-shield-check text-green-400"></i> 
+            За сутки до конца подписки придёт напоминание в боте — вы сами решаете продлевать или нет
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== FAQ ===== -->
+<section class="py-20">
+    <div class="max-w-3xl mx-auto px-4">
+        <div class="text-center mb-12 fade-up">
+            <h2 class="text-3xl font-bold text-white mb-4">Частые вопросы</h2>
+        </div>
+        <div class="space-y-4">
+            <details class="glass rounded-xl group fade-up" open>
+                <summary class="p-5 flex items-center justify-between text-white font-medium cursor-pointer">
+                    Бот действительно бесплатный?
+                    <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                </summary>
+                <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">
+                    <span class="text-green-400 font-semibold">Да!</span> Рецепты, советы и помощь по дому — полностью бесплатны. 
+                    100⚡️ восстанавливаются каждый день автоматически.
+                </div>
+            </details>
+            
+            <details class="glass rounded-xl group fade-up delay-1">
+                <summary class="p-5 flex items-center justify-between text-white font-medium cursor-pointer">
+                    Подписка продлевается автоматически?
+                    <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                </summary>
+                <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">
+                    <span class="text-green-400 font-semibold">Нет!</span> За сутки до окончания вы получите уведомление в боте 
+                    и сами решите — продлевать или нет. Никаких автосписаний с карты.
+                </div>
+            </details>
+            
+            <details class="glass rounded-xl group fade-up delay-2">
+                <summary class="p-5 flex items-center justify-between text-white font-medium cursor-pointer">
+                    Это лотерея?
+                    <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                </summary>
+                <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">
+                    <span class="text-purple-400 font-semibold">Нет.</span> Розыгрыши — это способ поблагодарить активных 
+                    участников канала «Карамелька». Чем выше ваш уровень и активность — тем больше шансов на победу. 
+                    Участие полностью бесплатное.
+                </div>
+            </details>
+            
+            <details class="glass rounded-xl group fade-up delay-3">
+                <summary class="p-5 flex items-center justify-between text-white font-medium cursor-pointer">
+                    Как получить Планирование бесплатно?
+                    <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                </summary>
+                <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">
+                    Приглашайте друзей через реферальную ссылку: 
+                    <span class="text-white font-medium">10 активных друзей = 1 месяц планирования</span>, 
+                    20 = 3 месяца, 30 = навсегда. Друг считается активным после 3 дней использования бота.
+                </div>
+            </details>
+            
+            <details class="glass rounded-xl group fade-up delay-4">
+                <summary class="p-5 flex items-center justify-between text-white font-medium cursor-pointer">
+                    Можно ли вернуть деньги?
+                    <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                </summary>
+                <div class="px-5 pb-5 text-slate-400 text-sm leading-relaxed">
+                    Да, в течение <span class="text-white font-medium">14 дней</span> после покупки можно запросить возврат. 
+                    Обратитесь в поддержку бота через команду /support.
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
 
     <!-- ===== CTA ===== -->
     <section class="py-20">
