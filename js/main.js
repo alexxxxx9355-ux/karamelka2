@@ -1,6 +1,5 @@
 /**
- * Основной скрипт
- * Карамелька AI
+ * Основной скрипт — навигация + анимации при скролле
  */
 
 (function() {
@@ -12,54 +11,53 @@
         if (!navbar) return;
         
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
         });
     }
     
-    // Плавный скролл для якорных ссылок
+    // Анимации появления при скролле (Intersection Observer)
+    function initScrollAnimations() {
+        const elements = document.querySelectorAll('.fade-up');
+        
+        if (!elements.length) return;
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        elements.forEach(el => observer.observe(el));
+    }
+    
+    // Плавный скролл
     function initSmoothScroll() {
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
     }
     
-    // Мобильное меню (если понадобится)
-    function initMobileMenu() {
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        if (menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
-    }
-    
-    // Инициализация
+    // Запуск
     function init() {
         initStickyNav();
+        initScrollAnimations();
         initSmoothScroll();
-        initMobileMenu();
     }
     
-    // Запуск
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
     } else {
         init();
     }
-    
 })();
